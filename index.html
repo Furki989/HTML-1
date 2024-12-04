@@ -1,0 +1,162 @@
+<!DOCTYPE html>     
+
+<html>
+    <head>                                                                          <!-- HEAD ANFANG-, ist der Tab bereich der sich öffnet, und wichtige einstellungen wie verbindung mit CSS datei oder Internetseiten mit vorgefertigeten styles   -->
+        <title> Meine erste Webseite</title>    
+        <meta property="og:title" content="Meine erste Webseite"/>                      <!-- der Name    -->
+        <meta property="og:description" content="Beschreibung"/>                        <!--             -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />             <!--Anpassung des Displaysgröße vom gerät was auf die Website zugreift, automatisch anpasst-->
+
+     <link rel="stylesheet" href="Design/main.css"/>                                       <!--Zugriff auf die CSS Datei mit Pfad und stylesheet sagt aus um was für eine Datei es sich handelt -->
+
+    </head>                                                                         <!-- HEAD ENDE-->
+    <body>                                                                          <!-- BODY ANFANG-, gibt den Inhalt der Seite wider-->
+        <header>                                                                    <!-- Obere TEIL vom BODY-->
+            <nav>                                                                   <!-- Navigations Leiste -->
+                <ul start="5" type="I">                                             <!-- Aufzählung die ab 5 beginnt mit römischen Zahlen, ul für ungeordnet ohne Zahlen und ol mit  -->
+                    <li> <a href="Beitraege/Beitrag1.html"> Erster Beitrag</a> </li>                                                        <!-- Aufzählung das erste, mit weiterleitung auf die nächste Seite  -->
+                    <li> <a href="https://Google.com" target="_blank" rel="noreferrer nofollow" id="Linktest"> Externer Link </a> </li>        <!--  Aufzählung des zweiten und weiter leitung auf eine andere Internetseite, man kann nicht zurück verfolgen von welcher Seite man darauf klickt-->
+                </ul>
+
+            </nav>
+        </header>
+        <main>                                                                         <!--main-->
+            <h1> Mein Blog Überschrift </h1>                                            
+
+            <section>                                                                    <!-- SECTION beschreibt einen Bestimmten Bereich-->
+                <h2 class="testklasse"> anderer inhalt </h2>                               <!--class = Klasse für CSS-->
+                <p class ="testklasse"> text hinterlegen </p>
+
+                <div> Text </div>                                                             <!--        -->
+            </section>
+
+
+            <section>
+                <h2> Formulare </h2>
+                <from method="post" action="">                                                 <!--     -->
+                    <label for="username"> Benutzername</label>                                 <!--Text der daneben steht-->
+                    <input type="text" name="username" required placeholder="Benutzername" />   <!--Input feld für texte, ist notwendig um ein button zu betätigen und Platzhaöter Name-->
+                    <label for="password"> Passwort </label>
+                    <input type="password" name="password" required placeholder="Passwort" />
+                    <button type="submit"> Anmelden </button>                                   <!-- Button -->
+                </from>
+            </section>
+
+
+
+            <section>
+                <h2> Formulare2 </h2>
+                <from method="post" action="">
+                   <input type="radio" name="feld1" value="Admin" id="radioOption1"/>           <!-- Feld auswahl nur einer anklickbar -->
+                   <label for="radioOption1"> Admin  </label>
+                
+                   <input type="radio" name="feld1" value="Mitarbeiter" id="radioOption2" checked/>
+                   <label for="radioOption2"> Mitarbeiter  </label>
+
+                   <input type="radio" name="feld1" value="Option3" id="radioOption3"/>
+                   <label for="radioOption3"> Option1  </label>
+
+                   <button type="submit"> Abschicken</button>
+
+                   <input type="checkbox" name="Feld9" value="check1" id="Checkoption1">                    <!--Checkboxen-->
+                   <label for="Checkoption1"> check1</label>                                                
+                   <input type="checkbox" name="Feld9" value="check2" id="Checkoption2">
+                   <label for="Checkoption1"> check2</label>
+
+                   <button type="submit"> Abschicken</button>
+
+                    <label for="klickbox"> Testen</label>                                       
+                   <select name="klickbox">                                             <!--Auswahl lsite-->
+                    <option value="select1">Auswahl1</option>
+                    <option value="select2">Auswahl2</option>
+
+                   </select>
+
+
+                   
+                </from>
+            </section>
+
+            <section>
+                <h2> Bilder </h2>
+                <img src="Bilder/chillguy.jpg" alt="Chilligerdude" title="Nicerdude" width="200" height="200" />   <!-- Wenn das bild nicht geladen wurde steht Chilligerdude, geht man dadrüber steht nicerdude-->
+               
+                <picture> 
+
+                    <source srcset="Bilder/chillguy.jpg" media="(min-width: 800px) and (orientation: landscape)"/>              <!-- Größe des Bildes angepasst -->
+                    <source srcset="Bilder/New.png" media="(min-width: 600px)"/>                                                    <!--2tes bild wird angezeigt wenn der bildschirm kleiner ist -->
+                    <img src ="Bilder/chillguy.jpg"/>
+
+                </picture>
+            </section>
+
+
+            <article>
+                <h2> Tabelle </h2>
+
+                <table>
+                    <thead>
+                        <tr> 
+                            <th scope="col"> Produkt </th>
+                            <th scope="col"> Anzahl </th>
+                            <th> Preis </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr> 
+                            <th> Brötchen </th>
+                            <td> 4 </td>
+                            <td> 40,00E</td>
+                        </tr>
+                            <th> Gurken </th>
+                            <td> 5</td>
+                            <td> 40,00E</td>
+                        </tr>
+                            <th> Öl </th>
+                            <td> 2</td>
+                            <td> 20,00E</td>
+                            
+                    </tbody>
+                    <tfoot> 
+                        <tr> 
+                            <th> insgesamt </th>
+                            <td> 11 </td>
+                            <td> 100E </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+
+            </article>
+
+            <article> 
+                <h2> Überschrift zum ersten Artikel</h2>
+                <p> Text zum <strong> ersten Artikel wird hier dick geschrieben</strong> </p>
+                <p> hier gehts dann <em> weiter mit Lücke ist kursiv</em> </p>
+                <p> <q> Zitate zitieren art und weise </q> </p>
+                
+                <details>  
+                    <summary> Zusammenfassung</summary>                     <!--Ein und Ausklappbare Bare-->
+                    <p> test 1</p>
+                    <p> test 2 dazu gab es vieles mehr </p>   
+                </details>
+
+            </article>
+            
+
+
+        </main>
+
+        <footer> 
+
+
+        </footer>
+
+    </body>
+
+</html>
+
+
+

@@ -1,0 +1,24 @@
+.item{
+
+    background-color: green;
+    width: 25vw;
+    
+}
+
+.item:nth-child(odd) {                  /* um ein bestimmmtes style für die klasse zu erstellen, odd steht für alle ungeraden zahlen 1 und 3 gilt kann man 1 einfügen das es nur für den ersten innerhabl dieser klasse dieses style gilt */
+
+    height: 50px;
+    padding: 10px;
+
+}
+
+.wrapper{
+    display: flex;
+    height: 300px;
+    background-color: coral;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    
+}
